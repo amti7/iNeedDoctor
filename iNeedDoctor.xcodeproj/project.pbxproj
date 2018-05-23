@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D74A07EB20B47CA900E4B4AD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74A07EA20B47CA900E4B4AD /* MapViewController.swift */; };
+		D779D07520AC4B6900B3C4AB /* MedicalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D779D07420AC4B6900B3C4AB /* MedicalTableViewController.swift */; };
+		D779D07720AC9E2900B3C4AB /* MedicalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D779D07620AC9E2900B3C4AB /* MedicalDetailsViewController.swift */; };
+		D7BA930C20AB29D700AF19B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA930B20AB29D700AF19B4 /* AppDelegate.swift */; };
+		D7BA930E20AB29D700AF19B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA930D20AB29D700AF19B4 /* ViewController.swift */; };
+		D7BA931120AB29D700AF19B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BA930F20AB29D700AF19B4 /* Main.storyboard */; };
+		D7BA931620AB29D700AF19B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7BA931520AB29D700AF19B4 /* Assets.xcassets */; };
+		D7BA931920AB29D700AF19B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BA931720AB29D700AF19B4 /* LaunchScreen.storyboard */; };
+		D7BA932820AB2B5A00AF19B4 /* iNeedDoctor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7BA932620AB2B5A00AF19B4 /* iNeedDoctor.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D74A07EA20B47CA900E4B4AD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D779D07420AC4B6900B3C4AB /* MedicalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalTableViewController.swift; sourceTree = "<group>"; };
+		D779D07620AC9E2900B3C4AB /* MedicalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDetailsViewController.swift; sourceTree = "<group>"; };
+		D7BA930820AB29D700AF19B4 /* iNeedDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNeedDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BA930B20AB29D700AF19B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7BA930D20AB29D700AF19B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7BA931020AB29D700AF19B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7BA931520AB29D700AF19B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7BA931820AB29D700AF19B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7BA931A20AB29D700AF19B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BA932720AB2B5A00AF19B4 /* iNeedDoctor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iNeedDoctor.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7BA930520AB29D700AF19B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7BA92FF20AB29D700AF19B4 = {
+			isa = PBXGroup;
+			children = (
+				D7BA930A20AB29D700AF19B4 /* iNeedDoctor */,
+				D7BA930920AB29D700AF19B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7BA930920AB29D700AF19B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7BA930820AB29D700AF19B4 /* iNeedDoctor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7BA930A20AB29D700AF19B4 /* iNeedDoctor */ = {
+			isa = PBXGroup;
+			children = (
+				D7BA930B20AB29D700AF19B4 /* AppDelegate.swift */,
+				D7BA930D20AB29D700AF19B4 /* ViewController.swift */,
+				D779D07420AC4B6900B3C4AB /* MedicalTableViewController.swift */,
+				D779D07620AC9E2900B3C4AB /* MedicalDetailsViewController.swift */,
+				D74A07EA20B47CA900E4B4AD /* MapViewController.swift */,
+				D7BA930F20AB29D700AF19B4 /* Main.storyboard */,
+				D7BA931520AB29D700AF19B4 /* Assets.xcassets */,
+				D7BA931720AB29D700AF19B4 /* LaunchScreen.storyboard */,
+				D7BA931A20AB29D700AF19B4 /* Info.plist */,
+				D7BA932620AB2B5A00AF19B4 /* iNeedDoctor.xcdatamodeld */,
+			);
+			path = iNeedDoctor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7BA930720AB29D700AF19B4 /* iNeedDoctor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7BA931D20AB29D700AF19B4 /* Build configuration list for PBXNativeTarget "iNeedDoctor" */;
+			buildPhases = (
+				D7BA930420AB29D700AF19B4 /* Sources */,
+				D7BA930520AB29D700AF19B4 /* Frameworks */,
+				D7BA930620AB29D700AF19B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iNeedDoctor;
+			productName = iNeedDoctor;
+			productReference = D7BA930820AB29D700AF19B4 /* iNeedDoctor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7BA930020AB29D700AF19B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Kamil Gacek";
+				TargetAttributes = {
+					D7BA930720AB29D700AF19B4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D7BA930320AB29D700AF19B4 /* Build configuration list for PBXProject "iNeedDoctor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7BA92FF20AB29D700AF19B4;
+			productRefGroup = D7BA930920AB29D700AF19B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7BA930720AB29D700AF19B4 /* iNeedDoctor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7BA930620AB29D700AF19B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BA931920AB29D700AF19B4 /* LaunchScreen.storyboard in Resources */,
+				D7BA931620AB29D700AF19B4 /* Assets.xcassets in Resources */,
+				D7BA931120AB29D700AF19B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7BA930420AB29D700AF19B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D779D07520AC4B6900B3C4AB /* MedicalTableViewController.swift in Sources */,
+				D74A07EB20B47CA900E4B4AD /* MapViewController.swift in Sources */,
+				D779D07720AC9E2900B3C4AB /* MedicalDetailsViewController.swift in Sources */,
+				D7BA930E20AB29D700AF19B4 /* ViewController.swift in Sources */,
+				D7BA930C20AB29D700AF19B4 /* AppDelegate.swift in Sources */,
+				D7BA932820AB2B5A00AF19B4 /* iNeedDoctor.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7BA930F20AB29D700AF19B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7BA931020AB29D700AF19B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7BA931720AB29D700AF19B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7BA931820AB29D700AF19B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7BA931B20AB29D700AF19B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7BA931C20AB29D700AF19B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7BA931E20AB29D700AF19B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iNeedDoctor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kamil.iNeedDoctor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7BA931F20AB29D700AF19B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iNeedDoctor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kamil.iNeedDoctor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7BA930320AB29D700AF19B4 /* Build configuration list for PBXProject "iNeedDoctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BA931B20AB29D700AF19B4 /* Debug */,
+				D7BA931C20AB29D700AF19B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7BA931D20AB29D700AF19B4 /* Build configuration list for PBXNativeTarget "iNeedDoctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BA931E20AB29D700AF19B4 /* Debug */,
+				D7BA931F20AB29D700AF19B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D7BA932620AB2B5A00AF19B4 /* iNeedDoctor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D7BA932720AB2B5A00AF19B4 /* iNeedDoctor.xcdatamodel */,
+			);
+			currentVersion = D7BA932720AB2B5A00AF19B4 /* iNeedDoctor.xcdatamodel */;
+			path = iNeedDoctor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D7BA930020AB29D700AF19B4 /* Project object */;
+}
