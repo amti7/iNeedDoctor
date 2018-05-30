@@ -34,7 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="LUNCH"/>
                                 <connections>
-                                    <segue destination="r8B-gX-9Co" kind="show" id="d4E-Fl-wDU"/>
+                                    <segue destination="ws3-lL-AzS" kind="show" id="lh6-Op-88M"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I NEED A DOCTOR APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2N-sh-Gi7">
@@ -54,7 +54,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0js-Vn-YPn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="158.77061469265368"/>
+            <point key="canvasLocation" x="-430" y="158"/>
+        </scene>
+        <!--City Table View Controller-->
+        <scene sceneID="Crt-GL-MFs">
+            <objects>
+                <tableViewController id="4jO-S8-JRH" customClass="CityTableViewController" customModule="iNeedDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="g0h-RZ-pMb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="zN2-qn-DrF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zN2-qn-DrF" id="gYf-Uc-iMq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="r8B-gX-9Co" kind="show" id="MKV-A7-LTE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4jO-S8-JRH" id="Ny1-PM-9rZ"/>
+                            <outlet property="delegate" destination="4jO-S8-JRH" id="OZc-r8-Z8h"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="fsd-sF-QwZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S18-vZ-23o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.60000000000002" y="157.87106446776613"/>
         </scene>
         <!--Medical Table View Controller-->
         <scene sceneID="7h5-c0-1TT">
@@ -82,11 +114,18 @@
                             <outlet property="delegate" destination="Mt0-Uh-4y3" id="PV9-6Q-m57"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="D5e-rD-9yB"/>
+                    <navigationItem key="navigationItem" id="D5e-rD-9yB">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="GxD-NQ-nsB">
+                            <color key="tintColor" red="1" green="0.11588262446956521" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="navigateBack:" destination="Mt0-Uh-4y3" id="CdH-wF-dIU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnZ-Ej-TTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2244" y="158"/>
+            <point key="canvasLocation" x="2372" y="159"/>
         </scene>
         <!--Medical Details View Controller-->
         <scene sceneID="qAK-ha-lMM">
@@ -124,7 +163,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Żaczkowskiego 32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpT-xs-TpP">
-                                                    <rect key="frame" x="16" y="11" width="143" height="21"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -140,8 +179,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32-085 Kraków" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG8-EO-GyJ">
-                                                    <rect key="frame" x="16" y="12" width="301" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32-085" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG8-EO-GyJ">
+                                                    <rect key="frame" x="16" y="12" width="71" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -155,6 +194,13 @@
                                                         <segue destination="f6P-7x-TK4" kind="show" id="jS1-BR-GhR"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kraków" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPm-WN-O7V">
+                                                    <rect key="frame" x="95" y="11" width="88" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -266,14 +312,15 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="rRn-oh-VPv">
                             <color key="tintColor" red="1" green="0.29180352590000003" blue="0.083732004969999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="navigateBack:" destination="85C-96-MIT" id="aqK-Fm-txb"/>
+                                <action selector="navigateBack:" destination="85C-96-MIT" id="XBn-Wn-6Ik"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cityLabel" destination="HPm-WN-O7V" id="pSO-Sl-VPi"/>
                         <outlet property="nameLabel" destination="g0C-PT-mzt" id="EbJ-hm-sPY"/>
                         <outlet property="phoneLabel" destination="T0E-M4-cMq" id="4jy-yH-pcc"/>
-                        <outlet property="postalAndCityLabel" destination="KG8-EO-GyJ" id="kXA-cE-DEX"/>
+                        <outlet property="postalCodeLabel" destination="KG8-EO-GyJ" id="b3u-J9-Mo9"/>
                         <outlet property="rateLabel" destination="qiW-vj-dP4" id="h5S-gF-9t0"/>
                         <outlet property="streetLabel" destination="SpT-xs-TpP" id="n7i-xV-LPL"/>
                         <outlet property="timeWhenOpenLabel" destination="DSB-Qf-0gZ" id="s99-e8-cK8"/>
@@ -286,7 +333,7 @@
         <!--Map View Controller-->
         <scene sceneID="ueo-PA-rJ5">
             <objects>
-                <viewController id="f6P-7x-TK4" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController id="f6P-7x-TK4" customClass="MapViewController" customModule="iNeedDoctor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PBt-OL-8CT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,17 +344,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c4T-Aq-SH2" firstAttribute="bottom" secondItem="k4c-aQ-92f" secondAttribute="bottom" id="iXD-aG-ebz"/>
-                            <constraint firstItem="c4T-Aq-SH2" firstAttribute="top" secondItem="k4c-aQ-92f" secondAttribute="top" id="kGQ-8M-2BV"/>
-                            <constraint firstItem="c4T-Aq-SH2" firstAttribute="trailing" secondItem="k4c-aQ-92f" secondAttribute="trailing" id="kXY-W6-Veo"/>
-                            <constraint firstItem="c4T-Aq-SH2" firstAttribute="leading" secondItem="k4c-aQ-92f" secondAttribute="leading" id="qVF-vy-AZB"/>
+                            <constraint firstItem="c4T-Aq-SH2" firstAttribute="bottom" secondItem="k4c-aQ-92f" secondAttribute="bottom" id="6eH-C0-YPZ"/>
+                            <constraint firstItem="c4T-Aq-SH2" firstAttribute="trailing" secondItem="k4c-aQ-92f" secondAttribute="trailing" id="7Tr-QD-WWy"/>
+                            <constraint firstItem="c4T-Aq-SH2" firstAttribute="leading" secondItem="k4c-aQ-92f" secondAttribute="leading" id="SwX-SW-i2B"/>
+                            <constraint firstItem="c4T-Aq-SH2" firstAttribute="top" secondItem="k4c-aQ-92f" secondAttribute="top" id="iD7-QT-gQc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k4c-aQ-92f"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="c4T-Aq-SH2" id="MQD-4X-4Bj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7Y-4H-xXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4646" y="-231"/>
+            <point key="canvasLocation" x="4646" y="-344"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lVD-50-NKg">
@@ -325,7 +375,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nk1-Ms-PKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="159"/>
+            <point key="canvasLocation" x="-1137" y="158"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fAS-u2-V78">
@@ -361,7 +411,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbw-Mg-Fkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463" y="159"/>
+            <point key="canvasLocation" x="1658" y="158"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CjC-9I-GTY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ws3-lL-AzS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N85-UM-1kS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4jO-S8-JRH" kind="relationship" relationship="rootViewController" id="Fv5-b9-3S4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4NC-sw-kiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="159"/>
         </scene>
     </scenes>
     <resources>

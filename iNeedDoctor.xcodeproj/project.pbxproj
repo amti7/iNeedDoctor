@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D74A07EB20B47CA900E4B4AD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74A07EA20B47CA900E4B4AD /* MapViewController.swift */; };
+		D74A080D20B8787500E4B4AD /* CityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74A080C20B8787500E4B4AD /* CityTableViewController.swift */; };
 		D779D07520AC4B6900B3C4AB /* MedicalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D779D07420AC4B6900B3C4AB /* MedicalTableViewController.swift */; };
 		D779D07720AC9E2900B3C4AB /* MedicalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D779D07620AC9E2900B3C4AB /* MedicalDetailsViewController.swift */; };
+		D7994A5D20BD94D000039E2B /* AnnotaionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7994A5C20BD94D000039E2B /* AnnotaionObject.swift */; };
+		D7994A5F20BD94DA00039E2B /* MedicalAnnotaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7994A5E20BD94DA00039E2B /* MedicalAnnotaion.swift */; };
 		D7BA930C20AB29D700AF19B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA930B20AB29D700AF19B4 /* AppDelegate.swift */; };
 		D7BA930E20AB29D700AF19B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA930D20AB29D700AF19B4 /* ViewController.swift */; };
 		D7BA931120AB29D700AF19B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BA930F20AB29D700AF19B4 /* Main.storyboard */; };
@@ -20,8 +23,11 @@
 
 /* Begin PBXFileReference section */
 		D74A07EA20B47CA900E4B4AD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D74A080C20B8787500E4B4AD /* CityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
 		D779D07420AC4B6900B3C4AB /* MedicalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalTableViewController.swift; sourceTree = "<group>"; };
 		D779D07620AC9E2900B3C4AB /* MedicalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDetailsViewController.swift; sourceTree = "<group>"; };
+		D7994A5C20BD94D000039E2B /* AnnotaionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotaionObject.swift; sourceTree = "<group>"; };
+		D7994A5E20BD94DA00039E2B /* MedicalAnnotaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalAnnotaion.swift; sourceTree = "<group>"; };
 		D7BA930820AB29D700AF19B4 /* iNeedDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNeedDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BA930B20AB29D700AF19B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7BA930D20AB29D700AF19B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +52,7 @@
 		D7BA92FF20AB29D700AF19B4 = {
 			isa = PBXGroup;
 			children = (
+				D7994A5C20BD94D000039E2B /* AnnotaionObject.swift */,
 				D7BA930A20AB29D700AF19B4 /* iNeedDoctor */,
 				D7BA930920AB29D700AF19B4 /* Products */,
 			);
@@ -64,9 +71,11 @@
 			children = (
 				D7BA930B20AB29D700AF19B4 /* AppDelegate.swift */,
 				D7BA930D20AB29D700AF19B4 /* ViewController.swift */,
+				D74A080C20B8787500E4B4AD /* CityTableViewController.swift */,
 				D779D07420AC4B6900B3C4AB /* MedicalTableViewController.swift */,
 				D779D07620AC9E2900B3C4AB /* MedicalDetailsViewController.swift */,
 				D74A07EA20B47CA900E4B4AD /* MapViewController.swift */,
+				D7994A5E20BD94DA00039E2B /* MedicalAnnotaion.swift */,
 				D7BA930F20AB29D700AF19B4 /* Main.storyboard */,
 				D7BA931520AB29D700AF19B4 /* Assets.xcassets */,
 				D7BA931720AB29D700AF19B4 /* LaunchScreen.storyboard */,
@@ -151,9 +160,12 @@
 				D779D07520AC4B6900B3C4AB /* MedicalTableViewController.swift in Sources */,
 				D74A07EB20B47CA900E4B4AD /* MapViewController.swift in Sources */,
 				D779D07720AC9E2900B3C4AB /* MedicalDetailsViewController.swift in Sources */,
+				D7994A5D20BD94D000039E2B /* AnnotaionObject.swift in Sources */,
+				D74A080D20B8787500E4B4AD /* CityTableViewController.swift in Sources */,
 				D7BA930E20AB29D700AF19B4 /* ViewController.swift in Sources */,
 				D7BA930C20AB29D700AF19B4 /* AppDelegate.swift in Sources */,
 				D7BA932820AB2B5A00AF19B4 /* iNeedDoctor.xcdatamodeld in Sources */,
+				D7994A5F20BD94DA00039E2B /* MedicalAnnotaion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

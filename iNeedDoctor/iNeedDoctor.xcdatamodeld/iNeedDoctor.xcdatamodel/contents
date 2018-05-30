@@ -6,6 +6,8 @@
     </entity>
     <entity name="MedicalCenter" representedClassName="MedicalCenter" syncable="YES" codeGenerationType="class">
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cityLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="coordinates" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -18,6 +20,6 @@
     </entity>
     <elements>
         <element name="City" positionX="-252" positionY="135" width="128" height="73"/>
-        <element name="MedicalCenter" positionX="7" positionY="171" width="128" height="195"/>
+        <element name="MedicalCenter" positionX="7" positionY="171" width="128" height="225"/>
     </elements>
 </model>

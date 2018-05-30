@@ -15,14 +15,11 @@ class MedicalDetailsViewController: UITableViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var streetLabel: UILabel!
-    @IBOutlet weak var postalAndCityLabel: UILabel!
+    @IBOutlet weak var postalCodeLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var timeWhenOpenLabel: UILabel!
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
-    
-    @IBAction func navigateBack(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
     @IBAction func PerformCall(_ sender: UIButton) {
         if let url = URL(string: "telprompt:\(phoneLabel.text)") {
@@ -32,30 +29,66 @@ class MedicalDetailsViewController: UITableViewController {
         }
     }
     
+    @IBAction func navigateBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
-        updateLabels(medData: recievedMedPlace!)
+      
         super.viewWillAppear(animated)
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        updateLabels()
     }
     
-
-    func updateLabels(medData: NSManagedObject ){
-        nameLabel.text = medData.value(forKey: "name") as! String
-        streetLabel.text = medData.value(forKey: "street") as! String
-        let postal = medData.value(forKey: "postalCode") as! String
-        let city = medData.value(forKey: "city") as! String
-        postalAndCityLabel.text = postal + " " + city
-        timeWhenOpenLabel.text = medData.value(forKey: "openingHours") as! String
-        let rate = medData.value(forKey: "rate")
-        let rateAsString = NSString(format: "%.2f" ,rate as! CVarArg)
-        rateLabel.text = rateAsString as! String
-        phoneLabel.text = medData.value(forKey: "phone") as! String
+    func updateLabels(){
+        //let rate = recievedMedPlace?.value(forKey: "rate")
+        //let rateAsString = NSString(format: "%.2f" ,rate as! CVarArg)
+        
+        update(for: nameLabel, with: "name")
+        update(for: streetLabel, with: "street")
+        update(for: postalCodeLabel, with: "postalCode")
+        update(for: cityLabel, with: "city")
+        
+       // update(for: rateLabel, with: "rate")
+       
+        
+        
+        
+        print(recievedMedPlace?.value(forKey: "rate"))
+        print((recievedMedPlace?.value(forKey: "rate")) as! CVarArg)
+        print(type(of: recievedMedPlace?.value(forKey: "rate")))
+        print(String(format: "%d.00", recievedMedPlace?.value(forKey: "rate") as! CVarArg))
+        
+        //print(NSString(format: "%.2f" ,(recievedMedPlace?.value(forKey: "rate")) as! CVarArg)
+        
+        
+        //let rateText = NSString(format: "%.2f" ,(recievedMedPlace?.value(forKey: "rate")) as! CVarArg) as! String
+        //print("** " + rateText)
+        //rateLabel.text = rateText
+        
+        update(for: timeWhenOpenLabel, with: "openingHours")
+        update(for: phoneLabel, with: "phone")
+        
     }
-
+    
+    func update(for label: UILabel,with key: String) {
+        label.text = recievedMedPlace?.value(forKey: key) as! String
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       // let navigationController = segue.destination // as! UIViewController
+        let controller = segue.destination as! MapViewController
+        
+        controller.placeLatitude = Double(recievedMedPlace?.value(forKey: "latitude") as! Float)
+        controller.placeLongitude = Double(recievedMedPlace?.value(forKey: "longitude") as! Float)
+        controller.name = recievedMedPlace?.value(forKey: "name") as! String
+        controller.street = recievedMedPlace?.value(forKey: "street") as! String
+        controller.cityLatitude = recievedMedPlace?.value(forKey: "cityLatitude") as! Double
+        controller.cityLongitude = recievedMedPlace?.value(forKey: "cityLongitude") as! Double
+    }
+    
 }
